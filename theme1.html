@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bd575d51a.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <div class="main-container" id="m-cont" onclick="toggle()">
+        <span class="logo"><img src="/img/BLACKPINK-Logo-PNG.png" alt=""></span>
+        <nav class="navbar" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                MENU <i class="fa fa-bars"></i>
+            </a>
+            <div id="myDIV">
+                <a href="#" class="btn active">Home</a>
+                <a class="btn" href="#services">Services</a>
+                <a class="btn" href="#about">About</a>
+                <a class="btn" href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="welcome-text">
+            <h4> Welcome To Our Page!</h4> <br>
+            <h1>
+                NICE TO SEE YOU HERE
+            </h1> <a href="#services"><button>YOU WANNA KNOW MORE</button></a>
+
+        </div>
+    </div>
+    <a name="services"></a>
+    <div class="all-content">
+
+
+    <div class="services-head">Services <br>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+    </div>
+    <div class="services">
+        <div class="service1">
+            <div class="icon-head">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <h1>E-Commerce</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et atque nam, inventore velit ab.</p>
+        </div>
+        <div class="service1">
+            <div class="icon-head">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+
+                <h1>Web Security</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et atque nam, inventore velit ab.</p>
+        </div>
+        <div class="service1">
+            <div class="icon-head">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+
+                <h1>Responsive <br>Web <br> Design</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum et atque nam, inventore velit ab.</p>
+        </div>
+    </div>
+    <a name="about"></a>
+    <div class="about-head">
+        Who Am I <br> <span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </span>
+    </div>
+    <div class="about">
+        <div class="about1">
+            <h1>Vision and Mission</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil ea impedit dolorem quis nisi
+                velit veritatis dolor nesciunt veniam.</p>
+        </div>
+
+        <div class="about1">
+            <h1>History</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil ea impedit dolorem quisnisi
+                velit veritatis dolor nesciunt veniam.</p>
+        </div>
+
+        <div class="about1">
+            <h1>Best of</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil ea impedit dolorem quis nisi
+                velit veritatis dolor nesciunt veniam.</p>
+        </div>
+
+    </div>
+    <a name="contact"></a>
+    <div class="contact">
+        <div class="contact-head">
+            <h2>
+                CONTACT US
+            </h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <form >
+            <div class="form-sec">
+                <div class="input-sec1">
+                    <input type="text" placeholder="Your Name *" required
+                        data-validation-required-message="Please enter your name."> <br>
+                    <input type="email" placeholder="Your Email *" required
+                        data-validation-required-message="Please enter your e-mail."> <br>
+                    <input type="tel" placeholder="Your Number *" required
+                        data-validation-required-message="Please enter your mobile number.">
+                </div> <br>
+                <div class="input-sec2">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message *" required
+                        data-validation-required-message="Please enter your message."></textarea>
+                </div> <br>
+                <button id="sucess">
+                    Send Message </button>
+            </div>
+            <br>
+        </form>
+    </div>
+</div>
+
+    <script>
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
