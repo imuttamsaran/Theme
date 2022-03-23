@@ -1,4 +1,4 @@
-# Theme
-Create theme for portfolio or small business 
+# Portfolio Theme
+Theme for portfolio website template.
 
 
